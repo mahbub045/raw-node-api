@@ -1,12 +1,13 @@
 // dependencies
 const http = require('http');
+const { handleReqRes } = require('./helpers/handleReqRes');
 
 // app object - module scaffolding
 const app = {};
 
 // configuration
 app.config = {
-  port: 3000,
+  port: 5000,
 };
 
 //  create server
@@ -18,9 +19,7 @@ app.createServer = () => {
 };
 
 // handle request response
-app.handleReqRes = (req, res) => {
-  res.end('Hello World! Welcome to my server.');
-};
+app.handleReqRes = handleReqRes;
 
 // start the server
 app.createServer();
