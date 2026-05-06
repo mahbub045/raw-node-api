@@ -11,6 +11,9 @@
     "prettier": "^3.8.3"
   },
   "scripts": {
-    "start": "nodemon index"
+    "start": "NODE_ENV=staging nodemon index",
+    "production": "NODE_ENV=production nodemon index",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   }
 }
