@@ -8,9 +8,9 @@ const data = require('./lib/data');
 const app = {};
 
 // testing file system
-data.delete('test', 'newFile', (err) => {
-  console.log('this was the error', err);
-});
+// data.delete('test', 'newFile', (err) => {
+//   console.log('this was the error', err);
+// });
 
 //  create server
 app.createServer = () => {
