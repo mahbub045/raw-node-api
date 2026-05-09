@@ -8,9 +8,8 @@ const data = require('./lib/data');
 const app = {};
 
 // testing file system
-data.read('test', 'newFile', (err, data) => {
+data.delete('test', 'newFile', (err) => {
   console.log('this was the error', err);
-  console.log('this was the data', data);
 });
 
 //  create server
